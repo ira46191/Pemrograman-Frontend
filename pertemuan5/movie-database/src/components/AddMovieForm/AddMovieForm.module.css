@@ -1,0 +1,161 @@
+/* Small Screen */
+.container {
+  margin: 1rem;
+}
+
+.addmovieform {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.addmovieform__left {
+  margin-bottom: 1rem;
+}
+
+.addmovieform__title {
+  color: #52796f;
+  margin-bottom: 1rem;
+  font-size: 2.44rem;
+}
+.addmovieform__input1{
+  width: 75%;
+  border-color: #52796f;
+}
+.addmovieform__input2{
+  width: 75%;
+  border-color: #52796f;
+}
+.addmovieform__button {
+  padding: 0.3rem 2rem;
+  margin-top: 20px;
+  width: 75%;
+  border: none;
+  border-radius: 5px;
+    background-color: #468faf;
+  color: #fff;
+}
+
+.addmovieform__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .container {
+    margin: 1rem;
+  }
+  
+  .addmovieform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .addmovieform__left {
+    margin-bottom: 1rem;
+  }
+  
+  .addmovieform__title {
+    color: #52796f;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+  }
+  .addmovieform__input1{
+    width: 34%;
+    border-color: #52796f;
+  }
+  .addmovieform__input2{
+    width: 34%;
+    border-color: #52796f;
+  }
+  .addmovieform__button {
+    padding: 0.3rem 2rem;
+    margin-top: 20px;
+    width: 34%;
+    border: none;
+    border-radius: 5px;
+    background-color: #468faf;
+    color: #fff;
+  }
+  
+  .addmovieform__image {
+    /* max-width: 100%; */
+    height: auto;
+    border-radius: 25px;
+  
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin-left: 20rem ;
+  }
+
+  .addmovieform {
+    display: flex;
+    margin: 0 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+  }
+  .addmovieform__input1{
+    width: 34%;
+    border-color: #52796f;
+  }
+  .addmovieform__input2{
+    width: 34%;
+    border-color: #52796f;
+
+  }
+  .addmovieform__form1{
+    margin-top: 20px;
+  }
+  .addmovieform__button {
+    padding: 0.3rem 2rem;
+    margin-top: 20px;
+    width: 34%;
+    border: none;
+    border-radius: 5px;
+    background-color: #4361ee;
+    color: #fff;
+  }
+  .addmovieform__imageleft {
+    flex-basis: 40%;
+    justify-content: center;
+    margin-right: 5rem;
+  }
+
+  .addmovieform__right {
+    flex-basis: 60%;
+    justify-content: center;
+    margin-bottom: 50px;
+
+  }
+  
+}
+
+
+
+/* .container {
+    margin: 1rem;
+  }
+  .addmovieform__left{
+    margin-bottom: 1rem;
+  }
+.addmovieform__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+.addmovieform {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  } */
