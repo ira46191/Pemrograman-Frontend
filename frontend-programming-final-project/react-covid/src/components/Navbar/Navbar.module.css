@@ -1,0 +1,40 @@
+/* Small screen */
+.container {
+    background-color: #FF4E5B;
+    padding: 1rem;
+    color: white;
+} 
+
+.navbar__brand {
+    margin-bottom: 1rem;
+    font-family: 'open sans';
+}
+
+.navbar__list {
+    list-style: none;
+    font-family: 'open sans';
+}
+
+.navbar__item {
+    margin-bottom: 1rem;
+}
+
+/* medium screen */
+@media (min-width: 768px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar__brand{
+        margin: 0;
+    }
+    .navbar__list{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar__item{
+        margin: 0 1rem
+    }
+}
