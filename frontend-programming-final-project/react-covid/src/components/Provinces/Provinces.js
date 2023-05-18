@@ -14,7 +14,7 @@ function Provinces(props) {
           <table class={styles.table}>
             <tr class={styles.tr}>
               <th>No</th>
-              <th>Provinsi</th>
+              <th>Provinsi</th> 
               <th>Positif</th>
               <th>Sembuh</th>
               <th>Dirawat</th>
