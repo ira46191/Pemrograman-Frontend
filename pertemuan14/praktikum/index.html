@@ -1,0 +1,78 @@
+<body>
+  <div id="root"></div>
+
+  <!-- tambahin script react.js -->
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- tempat ngoding js -->
+  <script type="text/babel">
+    function Hello(props) {
+      return (
+        // <div>
+        //   <h1>Ira Kusuma Wardani</h1>
+        //   <p>Teknik Informatika</p>
+        // </div>
+
+        // make props biar lebih dinamis
+        <div>
+          <h2>{props.nama}</h2>
+          <p>{props.jurusan}</p>
+        </div>
+      );
+    }
+
+    function Header() {
+      return (
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      );
+    }
+
+    function Main() {
+      return (
+        <main>
+          <Hello nama="Ira" jurusan="Teknik Informatika" />
+          <Hello nama="Yoora" jurusan="Teknik Informatika" />
+          <Hello nama="Yoongi" jurusan="Teknik Informatika" />
+          <Hello nama="Agustd" jurusan="Teknik Informatika" />
+          <Hello nama="Kusuma" jurusan="Desain Komunikasi Visual" />
+        </main>
+      );
+    }
+
+    function Footer() {
+      return (
+        <footer>
+          <h3>Copyright @aufaroot18</h3>
+          <p>Created by React.js</p>
+        </footer>
+      );
+    }
+
+    function App() {
+      return (
+        <div>
+          <Header />
+          <Main />
+          <Footer />
+        </div>
+      );
+    }
+    const rootElement = document.getElementById("root");
+
+    // root react
+    const root = ReactDOM.createRoot(rootElement);
+
+    // render komponen hello ke root
+    root.render(<App></App>);
+  </script>
+</body>
