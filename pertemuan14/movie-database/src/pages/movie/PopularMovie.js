@@ -9,7 +9,6 @@ import { updateMovie } from "../../feature";
 
 function PopularMovie() {
   // membuat state movies
-  // const [movies, setMovies] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -20,11 +19,9 @@ function PopularMovie() {
   async function getPopularMovies() {
     //fect data dari axios
     const response = await axios(ENDPOINTS.POPULAR);
-    const movies = response.data.results;
-
     // simpan data ke state movie
     // setMovies(response.data.results);
-    dispatch(updateMovie(movies));
+    dispatch(updateMovie(response.data.results));
   }
 
   return (

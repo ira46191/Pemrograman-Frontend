@@ -9,20 +9,17 @@ import { updateMovie } from "../../feature";
 
 function Detail() {
   const params = useParams();
-  // const [movies, setMovies] = useState([]);
   const dispatch = useDispatch();
   
 
   useEffect(() => { 
     getRecommendationMovies();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params.id]);
+  }, [params.id]); 
 
   async function getRecommendationMovies(){
   const response = await axios(ENDPOINTS.RECOMMENDATIONS(params.id));
-  const movies = response.data.results;
-
-  dispatch(updateMovie(movies));
+  dispatch(updateMovie(response.data.results));
   }
 
   return (

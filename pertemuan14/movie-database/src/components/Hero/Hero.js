@@ -20,7 +20,6 @@ function Hero() {
 
   async function getTrandingMovies() {
     const response = await axios(ENDPOINTS.HEROTRANDING);
-    // console.log(response.data.results[0]);
     return response.data.results[0];
   }
 
@@ -44,8 +43,6 @@ function Hero() {
             <h2>{movie.title}</h2>
             <h3>{genres}</h3>
             <p>{movie.overview}</p>
-            {/* <Button class={styles.hero__button}>Watch</Button> */}
-            {/* <button class={styles.hero__button}>Watch</button> */}
             <Button as="a" href={trailer} target="_blank">
               Watch
             </Button>
@@ -59,17 +56,6 @@ function Hero() {
         </section>
       </div>
     </StyledHero>
-
-    // <section>
-    //   <div>
-    //     <h2>{movie.Tilte}</h2>
-    //     <h3>Genre: {movie.genre}</h3>
-    //     <p>{movie.Plot}</p>
-    //   </div>
-    //   <div>
-    //     <img src={movie.Poster} alt={movie.Title} />
-    //   </div>
-    // </section>
   );
 }
 

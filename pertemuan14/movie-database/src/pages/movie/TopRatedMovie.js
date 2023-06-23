@@ -8,7 +8,6 @@ import { updateMovie } from "../../feature";
 
 function TopRatedMovie() {
   // membuat state movies
-  //  const [movies2, setMovies2] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -19,12 +18,11 @@ function TopRatedMovie() {
   const getTopRatedMovies = async () => {
     //fect data dari axios
     const response = await axios(ENDPOINTS.TOPRATED);
-    const movies = response.data.results;
 
     // simpan data ke state movie
-    dispatch(updateMovie(movies));
+    dispatch(updateMovie(response.data.results));
   };
-
+ 
   //  console.log(movies2);
   return (
     <div>

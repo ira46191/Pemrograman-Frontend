@@ -8,7 +8,6 @@ import { updateMovie } from "../../feature";
 
 function NowPlayingMovie() {
   // membuat state movies
-  // const [movies3, setMovies3] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -19,12 +18,10 @@ function NowPlayingMovie() {
   async function getNowPlayingMovies() {
     //fect data dari axios
     const response = await axios(ENDPOINTS.NOWPLAYING);
-    const movies = response.data.results;
-
     // simpan data ke state movie
-    dispatch(updateMovie(movies));
+    dispatch(updateMovie(response.data.results));
   }
-
+ 
   return (
     <div>
       <Hero />

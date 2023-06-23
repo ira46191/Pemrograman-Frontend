@@ -17,7 +17,7 @@ const moviesSlice =  createSlice({
         }
         // deletMovie() {},
     },
-});
+}); 
 
 // generate action reducers
 const moviesReducer = moviesSlice.reducer;
