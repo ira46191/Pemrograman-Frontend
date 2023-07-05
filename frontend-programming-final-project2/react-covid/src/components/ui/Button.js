@@ -7,7 +7,7 @@ const Button = styled.button`
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
-  background-color: #468faf;
+  background-color: #ff4e5b;
 
   // PROPS VARIANT 
   background-color: ${(props) =>

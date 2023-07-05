@@ -73,12 +73,40 @@ const StyledTentangKami = styled.div`
     font-family: "open sans";
     color: white;
   }
-  
+
+  summary {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: large;
+    padding: 2rem;
+    background-color: #ff4e5b;
+    /* padding: 16px; */
+    margin-right: 1px;
+  }
+
+  @media screen and (min-width: 760px) {
+    summary {
+      width: 700px;
+      height: 150px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      background-color: #ff4e5b;
+      padding: 16px;
+      margin-right: 1px;
+    }
+  }
+
   @media screen and (min-width: 992px) {
     flex-direction: row;
     padding: 20px;
     margin-bottom: 0;
-    
+
     /* margin-left: 1rem; */
     /* max-width: 1200px;
       margin: 3rem auto; */
@@ -101,12 +129,13 @@ const StyledTentangKami = styled.div`
     }
 
     summary {
-      width: 10rem;
-      height: 10rem;
+      width: 12rem;
+      height: 12rem;
       border: 1px solid #ccc;
       border-radius: 8px;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      padding: 16px;
+      /* padding: 16px; */
+      padding: 2rem;
       margin-right: 1px;
       background-color: #fff;
       margin-bottom: 1rem;
