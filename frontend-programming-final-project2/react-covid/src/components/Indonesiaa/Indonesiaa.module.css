@@ -1,0 +1,51 @@
+/* Small Screen */
+.container {
+  margin: 1rem;
+}
+
+.indonesia {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.indonesia__title {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-family: 'open sans';
+  color: #FF4E5B;
+}
+
+.indonesia__description {
+  color: #5498fd;
+  font-family: 'open sans';
+
+}
+
+.indonesia__container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'open sans';
+  font-size: large;
+  /* background-color: #84a98c; */
+}
+
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .indonesia__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #4d4e55;
+
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+}

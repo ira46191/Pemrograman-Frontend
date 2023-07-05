@@ -15,7 +15,7 @@ function Movies(props) {
   // const [movies, setMovies] = useState(data); 
 
   // Buat fungsi tambah film
-  // dijalankan ketika tombol di klik
+  // dijalankan ketika tombol di klik 
   function tambahFilm(){
     const movie = {
       id: nanoid(4),
