@@ -32,13 +32,13 @@ function TentangKami() {
           </div>
           <div>
             <summary>
-              <h5>nama saya ira kusuma wardani saya lulusan sarjana</h5>
+              <h5>Tempat penyelenggaraan kegiatan ketatausahaan berlangsung</h5>
               <h3>Unit Administrasi</h3>
             </summary>
           </div>
           <div>
             <summary>
-              <h5>nama saya ira kusuma wardani saya lulusan sarjana</h5>
+              <h5>Satuan kerja atau organisasi bersifat mandiri dan pengerjaannya secara operational</h5>
               <h3>Unit Teknis</h3>
             </summary>
           </div>
