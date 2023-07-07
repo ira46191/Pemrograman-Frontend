@@ -1,6 +1,6 @@
 import styles from "./Provinces.module.css";
 
-function Provinces(props) {
+function Provinsi(props) {
   const {provinsi, bussumem} = props;
   
   return (
@@ -23,11 +23,11 @@ function Provinces(props) {
              {provinsi.map((provinsi, index) => (
             <tr key={index} className={styles.tr2}>
               <td>{index + 1}</td>
-              <td>{provinsi.kota }</td>
-              <td>{provinsi.positif}</td>
-              <td>{provinsi.sembuh}</td>
-              <td>{provinsi.dirawat}</td>
-              <td>{provinsi.meninggal}</td>
+              <td>{provinsi.name || provinsi.kota}</td>
+              <td>{provinsi.numbers.confirmed || provinsi.positif}</td>
+              <td>{provinsi.numbers.recovered || provinsi.sembuh}</td>
+              <td>{provinsi.numbers.treatment || provinsi.dirawah}</td>
+              <td>{provinsi.numbers.death || provinsi.meninggal}</td>
             </tr>
           ))}
           </table>
@@ -37,4 +37,4 @@ function Provinces(props) {
   );
 }
 
-export default Provinces;
+export default Provinsi;

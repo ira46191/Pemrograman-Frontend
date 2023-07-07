@@ -3,6 +3,7 @@ import Hero from "../components/Hero/Hero";
 import Regions from "../components/Regions/regions";
 import axios from "axios";
 import Indonesiaa from "../components/Indonesiaa/Indonesiaa";
+import ENDPOINT from "../utils/constants/endpoint";
 
 
 function Home() {
@@ -14,9 +15,8 @@ function Home() {
 
   async function getGlobalData() {
     try {
-      const response = await axios.get("https://covid-fe-2023.vercel.app/api/global.json");
-      const globalData = response.data.global;
-      setIndonesia(globalData);
+      const response = await axios.get(ENDPOINT.GLOBAL);
+      setIndonesia(response.data.global);
     } catch (error) {
       console.error(error);
     }

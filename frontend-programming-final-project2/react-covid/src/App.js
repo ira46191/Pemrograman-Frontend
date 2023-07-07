@@ -24,7 +24,7 @@ function App() {
         <Layout>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/movie/indonesia" element={<Indonesia />}></Route>
+            <Route path="/movie/indonesia" element={<Indonesia  provinsi={provinsi}/>}></Route>
             <Route path="/movie/provinsi" element={<Provinsi provinsi={provinsi} setProvinsi={setProvinsi} />}></Route>
             <Route path="/movie/about" element={<About />}></Route>
           </Routes>

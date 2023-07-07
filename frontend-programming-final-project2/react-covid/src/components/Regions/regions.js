@@ -4,6 +4,7 @@ import Regions2 from "../Regions2/Regions2";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import StyledRegions from "./Regions.styled";
+import ENDPOINT from "../../utils/constants/endpoint";
 
 function Regions() {
   const [data, setRegionsData] = useState([]);
@@ -14,9 +15,7 @@ function Regions() {
 
   async function getRegionsData() {
     try {
-      const response = await axios.get(
-        "https://covid-fe-2023.vercel.app/api/global.json"
-      );
+      const response = await axios.get(ENDPOINT.GLOBAL);
       const regionsData = response.data.regions;
       setRegionsData(regionsData);
     } catch (error) {
